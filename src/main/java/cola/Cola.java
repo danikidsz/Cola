@@ -33,4 +33,14 @@ public class Cola <T extends Base> {
         return elementos.isEmpty();
     }
 
+    @Override
+    public String toString() {
+        String cad= "[";
+        for (T e: elementos){
+            cad+=" "+e.toString();
+        }
+        return cad+"]";
+    }
+    
+
 }
